@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Font Awesome CCdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="mobile-menu--close">
+                <div class="row--close"></div>
+                <div class="row--close"></div>
+            </div>
+            <img src="" alt="">
+        </div>
+        <ul class="menu">
+            <li class="menu-item active">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span class="menu-link--text">Dashboard</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-user"></i>
+                    <span class="menu-link--text">Perfil</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="menu-link--text">Estatísticas</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span class="menu-link--text">Carreiras</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">    
+                    <i class="fas fa-question-circle"></i>
+                    <span class="menu-link--text">FAQ</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-star"></i>
+                    <span class="menu-link--text">Favoritos</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-cog"></i>
+                    <span class="menu-link--text">Definições</span>
+                </a>
+            </li>
+            <li class="menu-item logout">
+                <a href="#" class="menu-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="menu-link--text">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header--wrapper">
+            <div class="header-title">
+                <div class="mobile-menu">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user-info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar">
+                    </div>
+                    <img src="img/user.png" alt="" class="user-img">
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="card--container">
+            <h3 class="main--title">Dados de Hoje</h3>
+            <div class="card--wrapper">
+
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Valor do Pagamento 
+                            </span>
+                            <span class="amount-value"> $500,00</span>
+                        </div>
+                        <i class="fas fa-dollar-sign icon dark-red"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 3484</span>
+                </div>
+
+                <div class="payment--card light-purple">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Valor do Pagamento 
+                            </span>
+                            <span class="amount-value"> $200,00</span>
+                        </div>
+                        <i class="fas fa-list icon dark-purple"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 3184</span>
+                </div>
+
+                <div class="payment--card light-green">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Valor do Pagamento 
+                            </span>
+                            <span class="amount-value"> $350,00</span>
+                        </div>
+                        <i class="fas fa-users icon dark-green"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 6784</span>
+                </div>
+
+                <div class="payment--card light-blue">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Valor do Pagamento 
+                            </span>
+                            <span class="amount-value"> $150,00</span>
+                        </div>
+                        <i class="fa-solid fa-check icon dark-blue"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 4484</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table -->
+        <div class="tabular--wrapper">
+            <h3 class="main--title">Dados Financeiros</h3>
+            <div class="table--container">
+                <table>
+                    <thead>
+                        <th>Data</th>
+                        <th>Tipo de Transação</th>
+                        <th>Decrição</th>
+                        <th>Valor</th>
+                        <th>Categoria</th>
+                        <th>Estado</th>
+                        <th>Ação</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>28-11-2023</td>
+                            <td>Despesas</td>
+                            <td>Material de Escritório</td>
+                            <td>$250</td>
+                            <td>Despesas do Escritório</td>
+                            <td>Pendente</td>
+                            <td><button>Editar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>28-11-2023</td>
+                            <td>Despesas</td>
+                            <td>Fornecimento de Água</td>
+                            <td>$350</td>
+                            <td>Despesas do Escritório</td>
+                            <td>Efectuada</td>
+                            <td><button>Editar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>28-11-2023</td>
+                            <td>Despesas</td>
+                            <td>Fornecimento de Energia Elect...</td>
+                            <td>$250</td>
+                            <td>Despesas do Escritório</td>
+                            <td>Efectuada</td>
+                            <td><button>Editar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>25-11-2023</td>
+                            <td>Despesas</td>
+                            <td>Fornecimento de Café</td>
+                            <td>$150</td>
+                            <td>Despesas do Escritório</td>
+                            <td>Efectuada</td>
+                            <td><button>Editar</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">Total: $1,000 </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app/main.js"></script>
+</body>
+</html>

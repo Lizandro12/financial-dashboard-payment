@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #ffff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background-color: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 80px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+}
+
+.menu-item{
+    padding: 1rem ;
+    margin: 8px 0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.menu-item:hover, .active{
+    background-color: #e0e0e058;
+}
+
+.menu-link{
+    color: #ffff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-link i{
+    font-size: 1.2rem;
+}
+.menu-link--text{
+    overflow: hidden;
+
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* Main Section */
+.main-content{
+
+    position: relative;
+    background-color: #ebe9e9;
+    width: 100%;
+    padding: 1%;
+}
+
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header-title {
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    gap: 0.2rem;
+    cursor: pointer;
+}
+
+.mobile-menu--close{
+    display: none;
+    flex-direction: column;
+    gap: 0.2rem;
+    cursor: pointer;
+    margin-left: 9rem;
+}
+
+
+.row, .row--close{
+    height: 4px;
+    width: 31px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.search--box{
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input[type="text"] {
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+}
+
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover{
+    transform: scale(1.2);
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-img{
+    width: 60px;
+    height:50px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+
+/* ******** Card Container ******** */
+
+.card--container{
+    background-color: #ffff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.main--title{
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.card--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.payment--card{
+    background-color: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 275px ;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.payment--card:hover{
+    transform: translateY(-5px);
+}
+
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amount{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.amount-value{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.icon{
+    color: #ffff;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.card-detail{
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;  
+}
+
+/* Color CSS */
+
+.light-red {
+    background-color: rgb(251, 233, 233);
+}
+
+.light-purple {
+    background-color: rgb(254, 226, 254);
+}
+
+.light-green {
+    background-color: rgb(235, 254, 235);
+}
+
+.light-blue {
+    background-color: rgb(236, 236, 254);
+}
+
+.dark-red {
+    background-color: red;
+}
+
+.dark-purple {
+    background-color: purple;
+}
+
+.dark-green {
+    background-color: green;
+}
+
+.dark-blue {
+    background-color: blue;
+}
+
+
+/* ****** Tabular Section ****** */
+
+.tabular--wrapper{
+    background-color: #ffff;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table--container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgba(113, 99, 186, 255);
+    color: #ffff;
+}
+
+th{
+    padding: 15px;
+    text-align: left;
+}
+
+tbody{
+    background-color: #f2f2f2;
+}
+
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    
+}
+
+tr:nth-child(even){
+    background-color: #ffff;
+}
+
+tfoot{
+    background-color: rgba(113, 99, 186, 255);
+    font-weight: bold;
+    color: #ffff;
+}
+
+tfoot td{
+    color: #ffff;
+    padding: 15px;
+}
+
+.table--container button{
+    color: green;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width:1052px) {
+    .card--wrapper{
+        justify-content: center;
+    } 
+    .sidebar{
+        position: fixed;
+        width: 240px;
+        left: -240px;
+        z-index: 1;
+    }
+
+    .sidebar.able{
+        left: 0;
+        
+    }
+
+    .mobile-menu,
+    .mobile-menu--close{
+        display: flex;
+    }
+
+    .mobile-menu--close .row--close:nth-child(1){
+        transform: translateY(8px) rotate(41deg);
+    }
+
+    .mobile-menu--close .row--close:nth-child(2){
+        transform: rotate(-40deg);
+    }
+
+    .tabular--wrapper{
+        overflow-x: scroll;
+    }
+}
